@@ -1,0 +1,24 @@
+{
+  "name": "jleung51.github.io",
+  "version": "1.0.0",
+  "description": "My personal portfolio.",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jleung51/jleung51.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jleung51/jleung51.github.io/issues"
+  },
+  "homepage": "https://github.com/jleung51/jleung51.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper": "^1.0.1"
+  }
+}

@@ -1,4 +1,6 @@
 import React from 'react';
+
+import {colors} from './Colors.js';
 import './App.css';
 
 class Panes extends React.Component {
@@ -60,6 +62,7 @@ class PaneRight extends React.Component {
       display: "flex",
       float: "center",
 
+      flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       paddingTop: "33vh",
@@ -76,13 +79,15 @@ class PaneRight extends React.Component {
 }
 
 function App() {
-  return (
-    <div className="">
-      <div className="App-header">
+  const pageStyling = {
+    minHeight: "100vh",
 
-        <Panes />
-        
-      </div>
+    backgroundColor: colors.offWhite,
+  };
+
+  return (
+    <div style={pageStyling}>
+      <Panes />
     </div>
   );
 }

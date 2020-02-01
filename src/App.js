@@ -62,6 +62,7 @@ class PaneRight extends React.Component {
 
       alignItems: "center",
       justifyContent: "center",
+      paddingTop: "33vh",
       
       overflowY: "always",
     };

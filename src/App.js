@@ -6,6 +6,8 @@ import './Fonts.css';
 import {textStyles} from './TextStyles.js';
 import {colors} from './Colors.js';
 
+import logo from './logo.svg';
+
 class Panes extends React.Component {
   render() {
     const paneStyling = {
@@ -39,16 +41,23 @@ class PaneLeft extends React.Component {
 
         float: "left",
 
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-      }
+      },
+
+      logo: {
+        maxWidth: "20%",
+        marginTop: 0,
+      },
     };
 
     return (
       <div style={styling.pane}>
-        <div style={textStyles.title}>
-          <p text>Jeffrey Leung</p>
-        </div>
+
+        <p style={textStyles.title}>Jeffrey Leung</p>
+        <img src={logo} style={styling.logo} alt="Logo" />
+
       </div>
     );
   }

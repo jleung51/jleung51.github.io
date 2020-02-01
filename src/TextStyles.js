@@ -5,12 +5,16 @@ export const textStyles = {
     fontFamily: "Ubuntu",
     fontWeight: 300,
     fontSize: 64,
-    color: colors.black,
+    color: colors.primary,
+
+    marginBottom: "7%",
   },
 
   p: {
     fontFamily: "Source Sans Pro",
     fontSize: 24,
-    color: colors.primary,
+    color: colors.black,
+
+    // margin: 0,
   }
 };

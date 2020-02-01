@@ -83,6 +83,9 @@ function App() {
     minHeight: "100vh",
 
     backgroundColor: colors.offWhite,
+
+    color: colors.primary,
+    fontSize: 24,
   };
 
   return (

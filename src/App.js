@@ -1,7 +1,10 @@
 import React from 'react';
 
+// Fonts must be imported before other components
+import './Fonts.css';
+
+import {textStyles} from './TextStyles.js';
 import {colors} from './Colors.js';
-import './App.css';
 
 class Panes extends React.Component {
   render() {
@@ -32,24 +35,19 @@ class PaneLeft extends React.Component {
         width: "35vw",
         display: "flex",
         
+        backgroundColor: colors.primaryBackground,
+
         float: "left",
 
         alignItems: "center",
         justifyContent: "center",
-
-      },
-
-      name: {
-        // display: "table-cell",
-        // verticalAlign: "middle",
-        // padding: "20vmin"
       }
     };
 
     return (
       <div style={styling.pane}>
-        <div style={styling.name}>
-          <p>Jeffrey Leung</p>
+        <div style={textStyles.title}>
+          <p text>Jeffrey Leung</p>
         </div>
       </div>
     );
@@ -72,7 +70,7 @@ class PaneRight extends React.Component {
 
     return (
       <div style={paneStyling}>
-        <p>Content</p>
+        <p style={textStyles.p}>Content</p>
       </div>
     );
   }
@@ -84,8 +82,6 @@ function App() {
 
     backgroundColor: colors.offWhite,
 
-    color: colors.primary,
-    fontSize: 24,
   };
 
   return (

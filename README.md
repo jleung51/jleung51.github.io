@@ -1,4 +1,7 @@
 # jleung51.github.io
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/76673fc3-1989-4df0-957a-1640e5ce7177/deploy-status)](https://app.netlify.com/sites/dreamy-tesla-9ee993/deploys)
+
 My personal website.
 
 ## Planned Content

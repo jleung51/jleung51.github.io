@@ -1,3 +1,4 @@
+/* Colors also set in App.css */
 export const colors = {
     primary: "#3E3479",
     primaryBackground: "#F1F0F6",

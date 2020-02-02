@@ -1,0 +1,36 @@
+/* Colors also set in Colors.js */
+:root {
+  --color-primary: #3E3479;
+  --color-primarybackground: #F1F0F6;
+  --color-offwhite: #FCFCFF;
+  --color-darkgrey: #717171;
+  --color-black: #000000;
+}
+
+.title {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 64px;
+  color: var(--color-primary);
+  margin-bottom: 7%;
+}
+
+h1 {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 48px;
+  color: var(--color-black);
+}
+
+h2 {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--color-primary);
+}
+
+p {
+  font-family: "Source Sans Pro";
+  font-size: 24;
+  color: var(--color-black);
+}

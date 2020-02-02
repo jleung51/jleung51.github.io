@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Fonts must be imported before other components
+import './App.css';
 import './Fonts.css';
 
-import {textStyles} from './TextStyles.js';
 import {colors} from './Colors.js';
 
 import logo from './logo.svg';
@@ -55,9 +55,19 @@ class PaneLeft extends React.Component {
     return (
       <div style={styling.pane}>
 
-        <p style={textStyles.title}>Jeffrey Leung</p>
+        <p class="title">Jeffrey Leung</p>
         <img src={logo} style={styling.logo} alt="Logo" />
 
+      </div>
+    );
+  }
+}
+
+class TechnicalExperience extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Technical Experience</h1>
       </div>
     );
   }
@@ -79,7 +89,8 @@ class PaneRight extends React.Component {
 
     return (
       <div style={paneStyling}>
-        <p style={textStyles.p}>Content</p>
+        <TechnicalExperience />
+        <p>Content</p>
       </div>
     );
   }

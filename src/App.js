@@ -6,6 +6,10 @@ import './Fonts.css';
 
 import {colors} from './Colors.js';
 
+// Components
+import {TechnicalExperience} from './technical-experience/TechnicalExperience.js';
+
+// Images
 import logo from './logo.svg';
 
 class Panes extends React.Component {
@@ -55,19 +59,8 @@ class PaneLeft extends React.Component {
     return (
       <div style={styling.pane}>
 
-        <p class="title">Jeffrey Leung</p>
+        <p className="title">Jeffrey Leung</p>
         <img src={logo} style={styling.logo} alt="Logo" />
-
-      </div>
-    );
-  }
-}
-
-class TechnicalExperience extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Technical Experience</h1>
       </div>
     );
   }
@@ -84,7 +77,7 @@ class PaneRight extends React.Component {
       justifyContent: "center",
       paddingTop: "33vh",
       
-      overflowY: "always",
+      // overflowY: "always",
     };
 
     return (

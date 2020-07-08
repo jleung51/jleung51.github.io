@@ -3,10 +3,10 @@ import React from 'react';
 import {MasonryGallery} from './Masonry.js';
 
 // Images
-import cradle from './cradle.jpg';
+// import cradle from './cradle.jpg';
 
 export class TechnicalExperience extends React.Component {
-  
+
   render() {
 
     const projects = [

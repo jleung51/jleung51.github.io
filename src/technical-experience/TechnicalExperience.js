@@ -8,6 +8,9 @@ import {MasonryGallery} from './Masonry.js';
 export class TechnicalExperience extends React.Component {
 
   render() {
+    const styling = {
+      flexDirection: "column"
+    };
 
     const projects = [
       // {
@@ -18,7 +21,7 @@ export class TechnicalExperience extends React.Component {
 
     return (
       <div>
-        <h1>Technical Experience</h1>
+        <h1 style={styling}>Technical Experience</h1>
         <MasonryGallery elements={projects} />
       </div>
     );

@@ -7,25 +7,24 @@ import './Fonts.css';
 import {colors} from './Colors.js';
 
 // Components
+import {Sidebar} from './sidebar/Sidebar.js';
 import {TechnicalExperience} from './technical-experience/TechnicalExperience.js';
-
-// Images
-import logo from './logo.svg';
 
 class Panes extends React.Component {
   render() {
-    const paneStyling = {
+    const styling = {
       height: "100vh",
-      
+
+      display: "flex",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: "flex-start",
       textAlign: "center",
-      
+
       overflow: "hidden",
     };
 
     return (
-      <div style={paneStyling}>
+      <div style={styling}>
         <PaneLeft />
         <PaneRight />
       </div>
@@ -39,28 +38,18 @@ class PaneLeft extends React.Component {
       pane: {
         height: "100vh",
         width: "35vw",
+
         display: "flex",
-        
-        backgroundColor: colors.primaryBackground,
-
-        float: "left",
-
-        flexDirection: "column",
-        alignItems: "center",
         justifyContent: "center",
-      },
+        alignItems: "center",
 
-      logo: {
-        maxWidth: "20%",
-        marginTop: 0,
+        backgroundColor: colors.primaryBackground,
       },
     };
 
     return (
       <div style={styling.pane}>
-
-        <p className="title">Jeffrey Leung</p>
-        <img src={logo} style={styling.logo} alt="Logo" />
+        <Sidebar />
       </div>
     );
   }
@@ -70,14 +59,14 @@ class PaneRight extends React.Component {
   render() {
     const paneStyling = {
       display: "flex",
-      float: "center",
 
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      paddingTop: "33vh",
-      
-      // overflowY: "always",
+
+      marginLeft: "5vw",
+
+      overflowY: "always",
     };
 
     return (

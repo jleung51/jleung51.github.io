@@ -30,7 +30,7 @@ export class Sidebar extends React.Component {
       },
 
       logoPersonal: {
-        maxWidth: "20%",
+        width: "8vw",
 
         marginBottom: "2.5em",
       },
